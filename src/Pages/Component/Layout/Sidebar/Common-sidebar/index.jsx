@@ -33,7 +33,7 @@ const Sidebarx = (props) => {
   return (
     <>
       <div className="outer-side0of-slider">
-        <nav id="sidebar">
+        <nav id="sidebar" className="sidebar-on">
           <div className="menu-open-toggle-btn">
             <div className="toggle-btn" onClick={togglesidebar}>
               <span></span>
@@ -59,7 +59,7 @@ const Sidebarx = (props) => {
                   <i className="fa fa-gavel" aria-hidden="true"></i>{" "}
                   {props.name2}
                 </div>
-                <ul id="sidesubbar">
+                <ul id="sidesubbar" >
                   <li>
                     <Link to={props.link1}>{props.name2a}</Link>
                   </li>
@@ -76,7 +76,7 @@ const Sidebarx = (props) => {
                   <i className="fa fa-book" aria-hidden="true"></i>{" "}
                   {props.name3}
                 </div>
-                <ul id="sidesubbar1">
+                <ul id="sidesubbar1" >
                   <li>
                     <Link to={props.link1}>{props.name3a}</Link>
                   </li>
@@ -128,12 +128,14 @@ const Sidebarx = (props) => {
                   </li>
                 </ul>
               </li>
-              <li onClick={togglesubmenud}>
+              <li onClick={togglesubmenud} >
                 <div>
                   <i className="fa fa-newspaper-o" aria-hidden="true"></i>
                   {props.name5}
                 </div>
-                <ul id="sidesubbar4">
+                <ul id="sidesubbar4" style={{
+                  
+                }}>
                   <li>
                     <Link to={props.link1}>{props.name5a}</Link>
                   </li>

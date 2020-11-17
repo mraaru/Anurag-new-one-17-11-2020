@@ -12,7 +12,7 @@ a {
     width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 1500px;
+    max-width: 1550px;
   }
   .top {
     width: 100%;
@@ -93,6 +93,59 @@ a {
   =================================
   ======footer footer footer========
   ==================================*/
+  nav ul {
+    background-color: rgb(252, 255, 241);
+  
+    margin-top: 110px;
+    margin-bottom: 100px;
+  }
+  nav ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 55px;
+    transition: 0.5s;
+  }
+  nav ul li div {
+    color: rgb(65, 64, 64);
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    font-family: "Cinzel", serif;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  nav ul li a {
+    color: rgb(65, 64, 64);
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    font-family: "Cinzel", serif;
+    transition: 0.2s;
+  }
+  nav ul li a:hover {
+    color: #ffffff;
+    background-color: rgb(70, 69, 69);
+    border-left-color: #000000;
+  }
+  nav ul li div:hover {
+    color: #ffffff;
+    background-color: rgb(70, 69, 69);
+    border-left-color: #000000;
+  }
+  nav ul ul li {
+    border-bottom: none;
+    line-height: 40px;
+  }
+  nav ul ul li a {
+    font-size: 10px;
+    color: black;
+    padding-left: 50px;
+  }
   .end {
     display: flex;
   
@@ -173,14 +226,14 @@ a {
   .conditionterm a {
     padding: 0 20px;
   }
-  .endmenumobile {
+  .endmenumobile-onon {
     display: none;
     margin: -45px 0;
   }
-  .endmenumobile ul {
+  .endmenumobile-onon ul {
     background: transparent;
   }
-  .endmenumobile ul li {
+  .endmenumobile-onon ul li {
     line-height: 40px;
     border-bottom: none;
     margin-left: 0;
@@ -190,10 +243,10 @@ a {
   .copyright_things{
       font-size: .8rem;
   }
-  .endmenumobile ul li:hover {
+  .endmenumobile-onon ul li:hover {
     border-left: 3px solid black;
   }
-  .endmenumobile ul li a:hover {
+  .endmenumobile-onon ul li a:hover {
     background-color: transparent;
     color: black;
   }
@@ -265,7 +318,7 @@ a {
     .endbox ul {
       display: none;
     }
-    .endmenumobile {
+    .endmenumobile-onon {
       display: flex;
       flex-direction: column;
       margin: 30px 0;
@@ -336,7 +389,7 @@ a {
     border-bottom: 0.5px solid black;
     background-color: rgb(252, 248, 241);
     margin-top: 3rem;
-    max-width: 1500px;
+    max-width: 1550px;
     position: absolute;
     top: 100px;
   }
@@ -416,8 +469,8 @@ a {
     position: fixed;
     width: 100%;
     height: 110%;
-    max-width: 1500px;
-    background-color: rgb(252, 248, 241);
+    max-width: 1550px;
+    background-color: rgb(255, 255, 255);
     overflow-y: scroll;
     overflow-x: hidden;
     top: -110%;
@@ -429,10 +482,10 @@ a {
   .menu-open-toggle-btn {
     position: fixed;
     width: 100%;
-    background-color: rgb(252, 255, 241);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px 0 black;
     height: 100px;
-    max-width: 1500px;
+    max-width: 1550px;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
@@ -444,18 +497,26 @@ a {
     align-items: center;
     justify-content: center;
   }
-  nav ul {
-    background-color: rgb(252, 255, 241);
-  
+  .sidebar-on ul {
+    background-color: rgb(255, 255, 255);
     margin-top: 110px;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
   }
-  nav ul li {
+  .sidebar-on ul li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     line-height: 55px;
     transition: 0.5s;
+    
+    
   }
-  nav ul li div {
+  nav ul li ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-on ul li div {
     color: rgb(65, 64, 64);
     font-size: 14px;
     padding-left: 10px;
@@ -467,7 +528,7 @@ a {
     transition: 0.2s;
     cursor: pointer;
   }
-  nav ul li a {
+  .sidebar-on ul li a {
     color: rgb(65, 64, 64);
     font-size: 14px;
     padding-left: 10px;
@@ -478,12 +539,12 @@ a {
     font-family: "Cinzel", serif;
     transition: 0.2s;
   }
-  nav ul li a:hover {
+  .sidebar-on ul li a:hover {
     color: #ffffff;
     background-color: rgb(70, 69, 69);
     border-left-color: #000000;
   }
-  nav ul li div:hover {
+  .sidebar-on ul li div:hover {
     color: #ffffff;
     background-color: rgb(70, 69, 69);
     border-left-color: #000000;
@@ -524,41 +585,50 @@ a {
     display: none;
     margin: 0 0;
   }
-  nav ul ul li {
+  .sidebar-on ul ul li {
     border-bottom: none;
     line-height: 40px;
   }
-  nav ul ul li a {
+  .sidebar-on ul ul li a {
     font-size: 10px;
     color: black;
     padding-left: 50px;
   }
   #sidesubbar.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar1.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar2.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar3.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar4.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar5.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar6.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar7.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidesubbar8.showo {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   #sidebar.active {
     top: 0;

@@ -42,7 +42,7 @@ export class Footer extends Component {
               <a href="./page/correction.html">Correction</a>
             </div>
           </div>
-          <nav className="endmenumobile">
+          <dev className="endmenumobile-onon sidebar-on" >
             <ul>
               <li onClick={togglesubmenua}>
                 <i className="fa fa-gavel" aria-hidden="true"></i> HerRights
@@ -186,7 +186,7 @@ export class Footer extends Component {
                 </ul>
               </li>
             </ul>
-          </nav>
+          </dev>
 
           <div className="endbox">
             <ul>
@@ -313,11 +313,11 @@ export class Footer extends Component {
 
           <div className="conditionterm">
             <a href="/">Terms Of Use</a>
-            <hr />
+            |
             <a href="/">Privacy Policy</a>
-            <hr />
+            |
             <a href="/">Advertise With Us</a>
-            <hr />
+            |
             <a href="/">About Us</a>
           </div>
           <h5 className="copyright_things">Copyright © 2020 Nari Jagran. All Rights Reserved</h5>
