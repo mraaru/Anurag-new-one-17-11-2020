@@ -3,34 +3,34 @@ import { Link } from "react-router-dom";
 import Logo from "../../../../Images/logo.jpeg";
 
 const Sidebarx = (props) => {
-    function togglesidebar() {
-        document.getElementById("sidebar").classList.toggle("active");
-      }
-      function togglesubmenu() {
-        document.getElementById("sidesubbar").classList.toggle("show");
-      }
-      function togglesubmenua() {
-        document.getElementById("sidesubbar1").classList.toggle("show");
-      }
-      function togglesubmenub() {
-        document.getElementById("sidesubbar2").classList.toggle("show");
-      }
-      function togglesubmenuc() {
-        document.getElementById("sidesubbar3").classList.toggle("show");
-      }
-      function togglesubmenud() {
-        document.getElementById("sidesubbar4").classList.toggle("show");
-      }
-      function togglesubmenue() {
-        document.getElementById("sidesubbar5").classList.toggle("show");
-      }
-      function togglesubmenuf() {
-        document.getElementById("sidesubbar6").classList.toggle("show");
-      }
-      function togglesubmenug() {
-        document.getElementById("sidesubbar7").classList.toggle("show");
-      }
-  return (
+  function togglesidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+  function togglesubmenu() {
+    document.getElementById("sidesubbar").classList.toggle("show");
+  }
+  function togglesubmenua() {
+    document.getElementById("sidesubbar1").classList.toggle("show");
+  }
+  function togglesubmenub() {
+    document.getElementById("sidesubbar2").classList.toggle("show");
+  }
+  function togglesubmenuc() {
+    document.getElementById("sidesubbar3").classList.toggle("show");
+  }
+  function togglesubmenud() {
+    document.getElementById("sidesubbar4").classList.toggle("show");
+  }
+  function togglesubmenue() {
+    document.getElementById("sidesubbar5").classList.toggle("show");
+  }
+  function togglesubmenuf() {
+    document.getElementById("sidesubbar6").classList.toggle("show");
+  }
+  function togglesubmenug() {
+    document.getElementById("sidesubbar7").classList.toggle("show");
+}
+return (
     <>
       <div className="outer-side0of-slider">
         <nav id="sidebar" className="sidebar-on">
@@ -48,18 +48,21 @@ const Sidebarx = (props) => {
           </div>
           <div className="sidebar-dextop">
             <ul>
-              <li>
-                <Link to={props.link1}>
-                  <i className="fa fa-home" aria-hidden="true"></i>
+                        <li  style={{
+                  display:"flex"
+                        }}>
+                            <i className="fa fa-home" aria-hidden="true"></i>
+                <Link to={props.link1} >
+                  
                   {props.name1}
                 </Link>
               </li>
               <li onClick={togglesubmenu}>
-                <div>
-                  <i className="fa fa-gavel" aria-hidden="true"></i>{" "}
+                <div className="listone-of-them">
+                  <i className="fa fa-gavel" aria-hidden="true"></i>
                   {props.name2}
                 </div>
-                <ul id="sidesubbar" >
+                <ul id="sidesubbar">
                   <li>
                     <Link to={props.link1}>{props.name2a}</Link>
                   </li>
@@ -72,11 +75,11 @@ const Sidebarx = (props) => {
                 </ul>
               </li>
               <li onClick={togglesubmenua}>
-                <div>
-                  <i className="fa fa-book" aria-hidden="true"></i>{" "}
+                <div className="listone-of-them">
+                  <i className="fa fa-book" aria-hidden="true"></i>
                   {props.name3}
                 </div>
-                <ul id="sidesubbar1" >
+                <ul id="sidesubbar1">
                   <li>
                     <Link to={props.link1}>{props.name3a}</Link>
                   </li>
@@ -92,8 +95,8 @@ const Sidebarx = (props) => {
                 </ul>
               </li>
               <li onClick={togglesubmenub}>
-                <div>
-                  <i className="fa fa-heart" aria-hidden="true"></i>{" "}
+                <div className="listone-of-them">
+                  <i className="fa fa-heart" aria-hidden="true"></i>
                   {props.name4}
                 </div>
                 <ul id="sidesubbar2">
@@ -112,8 +115,8 @@ const Sidebarx = (props) => {
                 </ul>
               </li>
               <li onClick={togglesubmenuc}>
-                <div>
-                  <i className="fa fa-h-square" aria-hidden="true"></i>{" "}
+                <div className="listone-of-them">
+                  <i className="fa fa-h-square" aria-hidden="true"></i>
                   {props.name9}
                 </div>
                 <ul id="sidesubbar3">
@@ -128,14 +131,12 @@ const Sidebarx = (props) => {
                   </li>
                 </ul>
               </li>
-              <li onClick={togglesubmenud} >
-                <div>
+              <li onClick={togglesubmenud}>
+                <div className="listone-of-them">
                   <i className="fa fa-newspaper-o" aria-hidden="true"></i>
                   {props.name5}
                 </div>
-                <ul id="sidesubbar4" style={{
-                  
-                }}>
+                <ul id="sidesubbar4" style={{}}>
                   <li>
                     <Link to={props.link1}>{props.name5a}</Link>
                   </li>
@@ -151,8 +152,8 @@ const Sidebarx = (props) => {
                 </ul>
               </li>
               <li onClick={togglesubmenue}>
-                <div>
-                  <i className="fa fa-book" aria-hidden="true"></i>{" "}
+                <div className="listone-of-them">
+                  <i className="fa fa-book" aria-hidden="true"></i>
                   {props.name6}
                 </div>
                 <ul id="sidesubbar5">
@@ -174,8 +175,8 @@ const Sidebarx = (props) => {
                 </ul>
               </li>
               <li onClick={togglesubmenuf}>
-                <div>
-                  <i className="fa fa-book" aria-hidden="true"></i>{" "}
+                <div className="listone-of-them">
+                  <i className="fa fa-book" aria-hidden="true"></i>
                   {props.name7}
                 </div>
                 <ul id="sidesubbar6">
@@ -194,8 +195,8 @@ const Sidebarx = (props) => {
                 </ul>
               </li>
               <li onClick={togglesubmenug}>
-                <div>
-                  <i className="fa fa-book" aria-hidden="true"></i>{" "}
+                <div className="listone-of-them">
+                  <i className="fa fa-book" aria-hidden="true"></i>
                   {props.name8}
                 </div>
                 <ul id="sidesubbar7">
@@ -217,20 +218,6 @@ const Sidebarx = (props) => {
                 </ul>
               </li>
             </ul>
-          </div>
-          <div className="sidebar-mobile">
-            <div className="sidebar-mobile-innerbox">
-              <h3><Link to={props.link1}> {props.name2} </Link> </h3>
-              <br />
-              <ul>
-                <li>
-                  <Link to={props.link1}> {props.name2a} </Link>
-                </li>
-                
-              </ul>
-              
-            </div>
-            
           </div>
         </nav>
       </div>
