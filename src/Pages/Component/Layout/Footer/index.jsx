@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../../../Images/logo.jpeg";
+import Logo from "../../../Image/logo.jpeg";
 
 function togglesubmenua() {
   document.getElementById("sidesubbar0").classList.toggle("show");

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../../../Images/logo.jpeg";
+import Logo from "../../../../Image/logo.jpeg";
 
 const Sidebarx = (props) => {
   function togglesidebar() {
@@ -29,8 +29,8 @@ const Sidebarx = (props) => {
   }
   function togglesubmenug() {
     document.getElementById("sidesubbar7").classList.toggle("show");
-}
-return (
+  }
+  return (
     <>
       <div className="outer-side0of-slider">
         <nav id="sidebar" className="sidebar-on">
@@ -48,14 +48,13 @@ return (
           </div>
           <div className="sidebar-dextop">
             <ul>
-                        <li  style={{
-                  display:"flex"
-                        }}>
-                            <i className="fa fa-home" aria-hidden="true"></i>
-                <Link to={props.link1} >
-                  
-                  {props.name1}
-                </Link>
+              <li
+                style={{
+                  display: "flex",
+                }}
+              >
+                <i className="fa fa-home" aria-hidden="true"></i>
+                <Link to={props.link1}>{props.name1}</Link>
               </li>
               <li onClick={togglesubmenu}>
                 <div className="listone-of-them">
