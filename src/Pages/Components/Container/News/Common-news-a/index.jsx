@@ -62,9 +62,11 @@ function Newsx() {
             </p>
           </div>
         </div>
-                
+
         <div className="box_news_news_one_on">
-          <div class="card mb-3" style={{ maxWidth: "540px" }}>
+          <div class="card mb-3" style={{
+            maxWidth: "540px"
+          }}>
             <div
               class="row no-gutters"
               style={{
@@ -133,7 +135,9 @@ function Newsx() {
               </div>
             </div>
           </div>
-          <div class="card mb-3" style={{ maxWidth: "540px" }}>
+          <div class="card mb-3" style={{
+            maxWidth: "540px"
+          }}>
             <div
               class="row no-gutters"
               style={{
@@ -156,7 +160,9 @@ function Newsx() {
               </div>
             </div>
           </div>
-          <div class="card mb-3" style={{ maxWidth: "540px" }}>
+          <div class="card mb-3" style={{
+            maxWidth: "540px"
+          }}>
             <div
               class="row no-gutters"
               style={{
@@ -177,6 +183,23 @@ function Newsx() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="news-box-box-off-off" >
+          <div class="card" style={{
+            maxWidth:"20%"
+          }}>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
             </div>
           </div>
         </div>
