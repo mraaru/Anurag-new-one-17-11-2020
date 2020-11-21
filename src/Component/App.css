@@ -756,5 +756,35 @@ nav ul li ul {
   }
 }
 
+.news_news_box_home_home{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.card11{
+  width: 40%;
+}
+.card12{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-news-one{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 32%;
+  
+}
+.box-rightlast{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
 
-
+}
+.headeing-news{
+  font-size: 3rem;
+  font-weight: 600;
+}
